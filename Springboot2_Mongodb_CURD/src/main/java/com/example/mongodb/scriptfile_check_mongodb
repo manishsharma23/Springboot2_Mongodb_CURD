@@ -1,0 +1,21 @@
+> show dbs
+admin   0.000GB
+config  0.000GB
+local   0.000GB
+> use local
+switched to db local
+> show collection
+2019-08-13T23:53:34.470+0530 E QUERY    [js] Error: don't know how to show [collection] :
+shellHelper.show@src/mongo/shell/utils.js:1066:11
+shellHelper@src/mongo/shell/utils.js:766:15
+@(shellhelp2):1:1
+> show collections
+startup_log
+> show collections
+employee
+startup_log
+> db.employee.find()
+{ "_id" : ObjectId("5d530077066cc6412078a739"), "name" : "Peter John", "id" : 12 }
+> db.employee.find()
+{ "_id" : ObjectId("5d530077066cc6412078a739"), "name" : "Peter John", "id" : 12 }
+{ "_id" : ObjectId("5d530114066cc666d8c2b3ab"), "name" : "Manish Sharma", "id" : 12 }

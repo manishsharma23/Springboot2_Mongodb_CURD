@@ -15,8 +15,8 @@ public class JavaMongoDemo {
 //---------- Creating Collection -------------------------//  
 			MongoCollection<Document> table = db.getCollection("employee");
 //---------- Creating Document ---------------------------//    
-			Document doc = new Document("name", "Manish Sharma");
-			doc.append("id", 12);
+			Document doc = new Document("name", "hetansh mSharma");
+			doc.append("id", 11);
 //----------- Inserting Data ------------------------------//  
 			table.insertOne(doc);
 		} catch (Exception e) {
